@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "blue-800": "#1d2260",
+              "blue-700": "#1E5AB1",
+              "gray-300": "#f1f5f8",
+              "red-900": "#e94a47",
+            },
+            spacing: {
+              140: "140px",
+              200: "200px",
+              222: "222px",
+              280: "280px",
+              640: "640px",
+            },
+            margin: {
+              64: "20rem",
+            },
+            inset: {
+              "-3": "-0.55rem;",
+              "-80": "-80px;",
+            },
+            zIndex: {
+              75: 75,
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <style>
+      .max-w-screen-sxl {
+        max-width: 1480px !important;
+      }
+    </style>
+    <div class="relative">
+      <div class="fixed inset-0 bg-white bg-opacity-75 h-screen z-75 overflow-hidden flex flex-col items-center justify-center">
+        <div class="bg-white shadow-xl flex flex-col items-center justify-center rounded-xl">
+          <div class="text-2xl font-bold text-blue-800 pt-12">Under Contruction</div>
+          <div class="w-280 md:w-640">
+            <img class="inline-block object-cover w-full h-full" src="img/under-construction.png" alt />
+          </div>
+        </div>
+      </div>
+      <nav class="z-50 bg-blue-800 fixed inset-x-0 top-0 shadow-md">
+        <div class="max-w-screen-sxl mx-auto px-6 lg:px-8">
+          <div class="flex items-center justify-between h-20">
+            <div class="flex items-center flex-1">
+              <router-link to="/" class="flex-shrink-0">
+                <svg width="200" height="109" viewBox="0 0 455 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4502 36.047L2.21973 20.8165L4.8648 18.1714L20.0953 33.4019L17.4502 36.047Z" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 61.2971C0 50.7937 8.58815 42.2791 19.1822 42.2791C29.7762 42.2791 38.3643 50.7937 38.3643 61.2971V65.2102H0V61.2971ZM0 81.9819V68.2106H38.3643V81.9819C38.3643 92.4853 29.7762 101 19.1822 101C8.58815 101 0 92.4853 0 81.9819ZM19.1821 49.924C17.8665 49.924 16.8 50.9814 16.8 52.2857V57.0092C16.8 58.3135 17.8665 59.3709 19.1821 59.3709C20.4977 59.3709 21.5642 58.3135 21.5642 57.0092V52.2857C21.5642 50.9814 20.4977 49.924 19.1821 49.924Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.29688 25.8671C9.01639 24.1476 11.0578 22.7836 13.3044 21.853C15.5511 20.9224 17.959 20.4434 20.3908 20.4434C22.8226 20.4434 25.2305 20.9224 27.4772 21.853C29.7238 22.7836 31.7652 24.1476 33.4847 25.8671L30.8396 28.5122C29.4675 27.14 27.8385 26.0515 26.0457 25.3089C24.2528 24.5663 22.3313 24.1841 20.3908 24.1841C18.4503 24.1841 16.5287 24.5663 14.7359 25.3089C12.9431 26.0515 11.3141 27.14 9.94195 28.5122L7.29688 25.8671Z"
+                    fill="white"
+                    fill-opacity="0.25"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.29688 25.8671C9.01639 24.1476 11.0578 22.7836 13.3044 21.853C15.5511 20.9224 17.959 20.4434 20.3908 20.4434L20.3908 24.1841C18.4503 24.1841 16.5287 24.5663 14.7359 25.3089C12.9431 26.0515 11.3141 27.14 9.94195 28.5122L7.29688 25.8671Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.910156 19.4805C3.46837 16.9223 6.50542 14.893 9.84789 13.5085C13.1904 12.124 16.7728 11.4114 20.3907 11.4114C24.0085 11.4114 27.591 12.124 30.9335 13.5085C34.2759 14.893 37.313 16.9223 39.8712 19.4805L37.2261 22.1256C35.0152 19.9147 32.3906 18.161 29.5019 16.9645C26.6133 15.768 23.5173 15.1521 20.3907 15.1521C17.264 15.1521 14.168 15.768 11.2794 16.9645C8.39077 18.161 5.7661 19.9147 3.55523 22.1256L0.910156 19.4805Z"
+                    fill="white"
+                    fill-opacity="0.25"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.910156 19.4805C3.46837 16.9223 6.50542 14.893 9.84789 13.5085C13.1904 12.124 16.7728 11.4114 20.3907 11.4114V15.1521C17.264 15.1521 14.168 15.768 11.2794 16.9645C8.39077 18.161 5.7661 19.9147 3.55523 22.1256L0.910156 19.4805Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M409.8 73.008C409.755 71.784 409.528 70.7187 409.12 69.812C408.757 68.86 408.259 68.0893 407.624 67.5C406.989 66.8653 406.264 66.412 405.448 66.14C404.632 65.8227 403.793 65.664 402.932 65.664C401.164 65.664 399.623 66.3213 398.308 67.636C397.039 68.9053 396.313 70.696 396.132 73.008H409.8ZM395.86 78.584C395.996 81.1227 396.721 83.14 398.036 84.636C399.396 86.132 401.164 86.88 403.34 86.88C404.791 86.88 406.06 86.5627 407.148 85.928C408.281 85.248 409.007 84.3187 409.324 83.14H418.436C417.393 86.5853 415.58 89.2373 412.996 91.096C410.412 92.9547 407.329 93.884 403.748 93.884C392.596 93.884 387.02 87.8093 387.02 75.66C387.02 73.076 387.383 70.7413 388.108 68.656C388.833 66.5707 389.876 64.78 391.236 63.284C392.641 61.788 394.341 60.6547 396.336 59.884C398.331 59.068 400.62 58.66 403.204 58.66C408.372 58.66 412.271 60.3147 414.9 63.624C417.575 66.9333 418.912 71.92 418.912 78.584H395.86ZM443.727 93V88.308C441.461 92.0253 437.993 93.884 433.323 93.884C431.646 93.884 430.105 93.5893 428.699 93C427.339 92.4107 426.161 91.572 425.163 90.484C424.166 89.396 423.373 88.104 422.783 86.608C422.239 85.112 421.967 83.4347 421.967 81.576V59.544H430.807V80.216C430.807 84.3867 432.689 86.472 436.451 86.472C438.718 86.472 440.418 85.7693 441.551 84.364C442.73 82.9133 443.319 81.0773 443.319 78.856V59.544H452.091V93H443.727Z"
+                    fill="white"
+                  />
+                  <path d="M376.5 94C380.075 94 383 91.075 383 87.5C383 83.925 380.075 81 376.5 81C372.925 81 370 83.925 370 87.5C370 91.075 372.925 94 376.5 94Z" fill="#FFCF0F" />
+                  <path
+                    d="M62.236 93V65.8H57.272V59.544H62.236C62.236 51.384 66.9733 47.304 76.448 47.304V54.444C75.3147 54.444 74.3853 54.5347 73.66 54.716C72.98 54.852 72.436 55.124 72.028 55.532C71.62 55.94 71.3253 56.484 71.144 57.164C71.008 57.7987 70.94 58.592 70.94 59.544H76.652V65.8H70.94V93H62.236ZM78.8227 93V59.544H87.1187V63.556C87.844 62.4227 88.592 61.5387 89.3627 60.904C90.1787 60.2693 90.9947 59.7933 91.8107 59.476C92.672 59.1133 93.5334 58.8867 94.3947 58.796C95.256 58.7053 96.14 58.66 97.0467 58.66H98.2027V67.704C97.3867 67.568 96.5707 67.5 95.7547 67.5C90.36 67.5 87.6627 70.1973 87.6627 75.592V93H78.8227ZM120.644 73.008C120.598 71.784 120.372 70.7187 119.964 69.812C119.601 68.86 119.102 68.0893 118.468 67.5C117.833 66.8653 117.108 66.412 116.292 66.14C115.476 65.8227 114.637 65.664 113.776 65.664C112.008 65.664 110.466 66.3213 109.152 67.636C107.882 68.9053 107.157 70.696 106.976 73.008H120.644ZM106.704 78.584C106.84 81.1227 107.565 83.14 108.88 84.636C110.24 86.132 112.008 86.88 114.184 86.88C115.634 86.88 116.904 86.5627 117.992 85.928C119.125 85.248 119.85 84.3187 120.168 83.14H129.28C128.237 86.5853 126.424 89.2373 123.84 91.096C121.256 92.9547 118.173 93.884 114.592 93.884C103.44 93.884 97.8638 87.8093 97.8638 75.66C97.8638 73.076 98.2264 70.7413 98.9518 68.656C99.6771 66.5707 100.72 64.78 102.08 63.284C103.485 61.788 105.185 60.6547 107.18 59.884C109.174 59.068 111.464 58.66 114.048 58.66C119.216 58.66 123.114 60.3147 125.744 63.624C128.418 66.9333 129.756 71.92 129.756 78.584H106.704ZM154.843 73.008C154.798 71.784 154.571 70.7187 154.163 69.812C153.8 68.86 153.302 68.0893 152.667 67.5C152.032 66.8653 151.307 66.412 150.491 66.14C149.675 65.8227 148.836 65.664 147.975 65.664C146.207 65.664 144.666 66.3213 143.351 67.636C142.082 68.9053 141.356 70.696 141.175 73.008H154.843ZM140.903 78.584C141.039 81.1227 141.764 83.14 143.079 84.636C144.439 86.132 146.207 86.88 148.383 86.88C149.834 86.88 151.103 86.5627 152.191 85.928C153.324 85.248 154.05 84.3187 154.367 83.14H163.479C162.436 86.5853 160.623 89.2373 158.039 91.096C155.455 92.9547 152.372 93.884 148.791 93.884C137.639 93.884 132.063 87.8093 132.063 75.66C132.063 73.076 132.426 70.7413 133.151 68.656C133.876 66.5707 134.919 64.78 136.279 63.284C137.684 61.788 139.384 60.6547 141.379 59.884C143.374 59.068 145.663 58.66 148.247 58.66C153.415 58.66 157.314 60.3147 159.943 63.624C162.618 66.9333 163.955 71.92 163.955 78.584H140.903Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M199.768 93V47.304H208.608V93H199.768ZM232.651 76.612C232.197 77.0653 231.54 77.428 230.679 77.7C229.817 77.972 228.571 78.2667 226.939 78.584C224.4 79.0827 222.655 79.7173 221.703 80.488C220.751 81.2587 220.275 82.3693 220.275 83.82C220.275 86.3133 221.703 87.56 224.559 87.56C225.692 87.56 226.735 87.3787 227.687 87.016C228.684 86.608 229.523 86.0867 230.203 85.452C230.928 84.772 231.495 84.0013 231.903 83.14C232.356 82.2333 232.583 81.2813 232.583 80.284L232.651 76.612ZM233.263 93C232.991 92.1387 232.809 91.1413 232.719 90.008C231.676 91.1867 230.293 92.1387 228.571 92.864C226.848 93.544 224.853 93.884 222.587 93.884C218.733 93.884 215.9 93.0453 214.087 91.368C212.319 89.6453 211.435 87.424 211.435 84.704C211.435 82.3013 211.82 80.3973 212.591 78.992C213.361 77.5413 214.427 76.408 215.787 75.592C217.147 74.776 218.756 74.1867 220.615 73.824C222.519 73.416 224.581 73.0533 226.803 72.736C229.024 72.4187 230.52 72.0107 231.291 71.512C232.061 70.968 232.447 70.1067 232.447 68.928C232.447 67.84 231.925 67.0013 230.883 66.412C229.885 65.7773 228.525 65.46 226.803 65.46C224.763 65.46 223.289 65.9133 222.383 66.82C221.521 67.7267 220.977 68.928 220.751 70.424H212.523C212.568 68.7013 212.84 67.1147 213.339 65.664C213.883 64.2133 214.721 62.9667 215.855 61.924C217.033 60.8813 218.552 60.088 220.411 59.544C222.269 58.9547 224.536 58.66 227.211 58.66C229.84 58.66 232.061 58.9547 233.875 59.544C235.733 60.1333 237.207 60.9947 238.295 62.128C239.428 63.216 240.244 64.5987 240.743 66.276C241.241 67.908 241.491 69.7667 241.491 71.852V93H233.263ZM266.809 93V72.736C266.809 70.152 266.378 68.4067 265.517 67.5C264.656 66.5933 263.182 66.14 261.097 66.14C256.518 66.14 254.229 68.7013 254.229 73.824V93H245.389V59.544H253.821V64.44C254.864 62.536 256.246 61.108 257.969 60.156C259.692 59.1587 261.913 58.66 264.633 58.66C266.22 58.66 267.693 58.9093 269.053 59.408C270.413 59.8613 271.569 60.564 272.521 61.516C273.518 62.468 274.289 63.6467 274.833 65.052C275.422 66.412 275.717 67.9987 275.717 69.812V93H266.809ZM309.712 80.896C309.486 82.8453 308.919 84.6133 308.012 86.2C307.151 87.7867 306.04 89.1467 304.68 90.28C303.32 91.4133 301.756 92.2973 299.988 92.932C298.266 93.5667 296.384 93.884 294.344 93.884C292.078 93.884 289.992 93.5213 288.088 92.796C286.23 92.0253 284.62 90.892 283.26 89.396C281.9 87.8547 280.835 85.9733 280.064 83.752C279.339 81.4853 278.976 78.856 278.976 75.864C278.976 72.872 279.339 70.288 280.064 68.112C280.835 65.936 281.9 64.168 283.26 62.808C284.62 61.4027 286.252 60.36 288.156 59.68C290.106 59 292.259 58.66 294.616 58.66C296.792 58.66 298.764 58.9547 300.532 59.544C302.346 60.1333 303.91 60.9947 305.224 62.128C306.584 63.2613 307.65 64.6213 308.42 66.208C309.191 67.7947 309.644 69.5627 309.78 71.512H300.872C300.646 69.7893 299.943 68.452 298.764 67.5C297.631 66.5027 296.226 66.004 294.548 66.004C293.596 66.004 292.712 66.1627 291.896 66.48C291.08 66.7973 290.355 67.3413 289.72 68.112C289.131 68.8373 288.655 69.8347 288.292 71.104C287.93 72.328 287.748 73.8467 287.748 75.66C287.748 79.332 288.406 82.052 289.72 83.82C291.035 85.588 292.554 86.472 294.276 86.472C295.999 86.472 297.472 85.996 298.696 85.044C299.92 84.092 300.623 82.7093 300.804 80.896H309.712ZM334.359 73.008C334.313 71.784 334.087 70.7187 333.679 69.812C333.316 68.86 332.817 68.0893 332.183 67.5C331.548 66.8653 330.823 66.412 330.007 66.14C329.191 65.8227 328.352 65.664 327.491 65.664C325.723 65.664 324.181 66.3213 322.867 67.636C321.597 68.9053 320.872 70.696 320.691 73.008H334.359ZM320.419 78.584C320.555 81.1227 321.28 83.14 322.595 84.636C323.955 86.132 325.723 86.88 327.899 86.88C329.349 86.88 330.619 86.5627 331.707 85.928C332.84 85.248 333.565 84.3187 333.883 83.14H342.995C341.952 86.5853 340.139 89.2373 337.555 91.096C334.971 92.9547 331.888 93.884 328.307 93.884C317.155 93.884 311.579 87.8093 311.579 75.66C311.579 73.076 311.941 70.7413 312.667 68.656C313.392 66.5707 314.435 64.78 315.795 63.284C317.2 61.788 318.9 60.6547 320.895 59.884C322.889 59.068 325.179 58.66 327.763 58.66C332.931 58.66 336.829 60.3147 339.459 63.624C342.133 66.9333 343.471 71.92 343.471 78.584H320.419ZM346.526 93V59.544H354.822V63.556C355.547 62.4227 356.295 61.5387 357.066 60.904C357.882 60.2693 358.698 59.7933 359.514 59.476C360.375 59.1133 361.236 58.8867 362.098 58.796C362.959 58.7053 363.843 58.66 364.75 58.66H365.906V67.704C365.09 67.568 364.274 67.5 363.458 67.5C358.063 67.5 355.366 70.1973 355.366 75.592V93H346.526Z"
+                    fill="white"
+                  />
+                  <path d="M170 72H194V78H170V72Z" fill="white" />
+                </svg>
+              </router-link>
+              <div class="hidden lg:flex lg:ml-auto space-x-8">
+                <div class="flex space-x-1">
+                  <router-link to="/" class="font-semibold py-2 px-3 text-white rounded-full hover:rounded-full bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">
+                    <span class="iconify text-xl" data-icon="entypo:home" data-inline="false"></span>
+                  </router-link>
+                  <router-link to="/about" class="font-semibold py-2 px-3 text-white rounded-full hover:rounded-full bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">
+                    <div>About Us</div>
+                  </router-link>
+                  <router-link to="/how-it-works" class="font-semibold py-2 px-3 text-white rounded-full hover:rounded-full bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">
+                    <div>How It Works</div>
+                  </router-link>
+                  <router-link to="/pricing" class="font-semibold py-2 px-3 text-white rounded-full hover:rounded-full bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">
+                    <div>Prixing</div>
+                  </router-link>
+                </div>
+                <div class="flex space-x-1">
+                  <router-link to="/login" class="font-bold py-2 px-3 text-white rounded-full hover:rounded-full bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">
+                    <div>Login</div>
+                  </router-link>
+                  <router-link to="/register" class="font-bold py-2 px-3 text-white rounded-full hover:rounded-full bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">
+                    <div>Register</div>
+                  </router-link>
+                </div>
+                <div class="group inline-flex items-center py-2 px-3 bg-transparent hover:bg-blue-900 transition duration-200 ease-in-out rounded-full">
+                  <div class="relative inline-block text-left">
+                    <button class="flex items-center text-white">
+                      <span class="iconify text-xl" data-icon="bi:globe" data-inline="false"></span>
+                      <span class="ml-1">
+                        <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                      </span>
+                    </button>
+                    <ul class="bg-white shadow-md rounded-md transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top right-0 mt-3 w-48 p-2 flex flex-col space-y-1 -ml-2">
+                      <li class="cursor-pointer">
+                        <div @click="changeLanguage('EN')" class="font-semibold text-sm p-3 leading-5 text-gray-800 rounded hover:rounded-md hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 flex transition duration-200 ease-in-out">
+                          <span class="iconify text-xl mr-1" data-icon="emojione-flag-for-european-union" data-inline="false"></span>
+                          <div>English</div>
+                        </div>
+                      </li>
+                      <li class="cursor-pointer">
+                        <div @click="changeLanguage('DE')" class="font-semibold text-sm p-3 leading-5 text-gray-800 rounded hover:rounded-md hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 flex transition duration-200 ease-in-out">
+                          <span class="iconify text-xl mr-1" data-icon="emojione-flag-for-germany" data-inline="false"></span>
+                          <div>Deutsch</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="-mr-2 flex lg:hidden">
+              <!-- Mobile menu button -->
+              <div class="flex space-x-1">
+                <div class="flex items-center text-white bg-transparent hover:bg-blue-900 rounded-full cursor-pointer py-2 px-3 transition duration-200 ease-in-out">
+                  <div class="relative inline-block text-left">
+                    <div class="flex items-center" @click="OpenLanguageDropdown = !OpenLanguageDropdown">
+                      <p class="text-white text-sm leading-5 font-medium">
+                        <span class="iconify text-xl" data-icon="bi:globe" data-inline="false"></span>
+                      </p>
+                      <svg class="flex-shrink-0 ml-1 h-5 w-5 text-white block" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+
+                    <div class="origin-top-left absolute right-0 mt-4 w-48 rounded-md shadow-lg border-0" v-if="OpenLanguageDropdown">
+                      <div class="rounded-md bg-white">
+                        <div class="p-1 flex flex-col space-y-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                          <div @click="changeLanguage('EN')" class="font-semibold text-sm py-2 px-3 leading-5 text-gray-800 rounded hover:rounded-md hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 flex transition duration-200 ease-in-out">
+                            <span class="iconify text-xl mr-1" data-icon="emojione-flag-for-european-union" data-inline="false"></span>
+                            <div>English</div>
+                          </div>
+                          <div @click="changeLanguage('DE')" class="font-semibold text-sm py-2 px-3 leading-5 text-gray-800 rounded hover:rounded-md hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 flex transition duration-200 ease-in-out">
+                            <span class="iconify text-xl mr-1" data-icon="emojione-flag-for-germany" data-inline="false"></span>
+
+                            <div>Deutsch</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button @click="openMenu = !openMenu" class="inline-flex items-center justify-center p-2 focus:outline-none text-white" aria-label="Main menu" aria-expanded="false">
+                <!-- Icon when menu is closed. -->
+                <!-- Menu open: "hidden", Menu closed: "block" -->
+                <div :class="openMenu ? 'block' : 'hidden'">
+                  <span class="iconify text-4xl" data-icon="eva:menu-2-fill" data-inline="false"></span>
+                </div>
+                <!-- Icon when menu is open. -->
+                <!-- Menu open: "block", Menu closed: "hidden" -->
+                <div :class="openMenu ? 'hidden' : 'block'">
+                  <span class="iconify text-4xl" data-icon="ion:close" data-inline="false"></span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--
+    Mobile menu, toggle classes based on menu state.
+
+    Menu open: "block", Menu closed: "hidden"
+    -->
+        <div class="guest-menu-mobile lg:hidden flex-col" :class="openMenu ? 'hidden' : 'flex'">
+          <div class="px-2 pt-2 pb-3 flex flex-col space-y-1">
+            <router-link to="/" class="font-semibold text-sm p-3 leading-5 text-white rounded hover:rounded-md bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">{{ getWordInLanguage("guestMenu.Home") }}</router-link>
+            <router-link to="/about" class="font-semibold text-sm p-3 leading-5 text-white rounded hover:rounded-md bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">{{ getWordInLanguage("guestMenu.AboutUs") }}</router-link>
+            <router-link to="/how-it-works" class="font-semibold text-sm p-3 leading-5 text-white rounded hover:rounded-md bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">{{ getWordInLanguage("guestMenu.HowItWorkds") }}</router-link>
+            <router-link to="/pricing" class="font-semibold text-sm p-3 leading-5 text-white rounded hover:rounded-md bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">{{ getWordInLanguage("guestMenu.Pricing") }}</router-link>
+          </div>
+          <div class="px-2 pt-2 pb-3 flex flex-col space-y-1 border-t border-white border-opacity-25">
+            <router-link to="/login" class="font-semibold text-sm p-3 leading-5 text-white rounded hover:rounded-md bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">{{ getWordInLanguage("guestMenu.Login") }}</router-link>
+            <router-link to="/register" class="font-semibold text-sm p-3 leading-5 text-white rounded hover:rounded-md bg-transparent hover:bg-blue-900 focus:outline-none flex transition duration-200 ease-in-out">{{ getWordInLanguage("guestMenu.Register") }}</router-link>
+          </div>
+        </div>
+      </nav>
+      <main class="mt-20">
+        <div>
+          <div class="relative flex flex-col md:flex-row justify-around max-w-screen-sxl mx-auto z-20 items-center px-6 lg:px-8">
+            <div class="relative flex flex-col justify-between flex-1 w-full md:w-1/2 pt-8 md:pt-16 md:pb-16">
+              <div>
+                <div class="flex flex-col">
+                  <div class="self-start mb-4 px-2 py-1 text-sm font-semibold tracking-tight leading-tight text-green-500 bg-green-100 rounded-full">Get the most out and live your work dream</div>
+                  <div class="tracking-tight leading-none font-extrabold text-blue-800 sm:leading-none text-4xl md:text-5xl flex flex-col">
+                    <span>Welcome to</span>
+                    <span>free-lancer.eu</span>
+                  </div>
+                </div>
+                <div class="text-lg text-gray-500 mt-6 leading-relaxed">Our community of freelancers offers the ability to find the perfect candidate in minutes for every kind of projects. Trusted by dozens of companies worldwide."</div>
+                <div class="flex space-x-4 mt-16 justify-between md:justify-start">
+                  <div class>
+                    <router-link to="/projects" class="w-full flex items-center justify-center px-5 py-3 text-base font-semibold tracking-wide rounded-md border-0 text-white shadow-md hover:shadow-xl bg-red-500 hover:bg-red-500 focus:outline-none transition duration-150 ease-in-out">
+                      Projects
+                    </router-link>
+                  </div>
+                  <div class>
+                    <router-link to="/freelancers" class="w-full flex items-center justify-center px-5 py-3 text-base font-semibold border-0 tracking-wide rounded-md text-white shadow-md hover:shadow-xl bg-blue-800 hover:bg-blue-900 focus:outline-none transition duration-150 ease-in-out">
+                      Free-lancers
+                    </router-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="img/banner-welcome.png" alt="" class="w-full md:w-1/2" />
+          </div>
+
+          <div class="mb-28 bg-blue-50 py-12 flex flex-col space-y-12">
+            <div>
+              <div class="grid grid-cols-3 divide-x divide-gray-200 text-gray-800 max-w-screen-xl mx-auto">
+                <div class="text-center flex flex-col leading-tight">
+                  <span class="text-sm">Free-lancers</span>
+                  <span class="text-3xl md:text-5xl font-bold">7000+</span>
+                </div>
+                <div class="text-center flex flex-col leading-tight">
+                  <span class="text-sm">Employers</span>
+                  <span class="text-3xl md:text-5xl font-bold">1300+</span>
+                </div>
+                <div class="text-center flex flex-col leading-tight">
+                  <span class="text-sm">Projects</span>
+                  <span class="text-3xl md:text-5xl font-bold">300+</span>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto max-w-screen-lg shadow-lg bg-white rounded-md relative z-30">
+              <div class="px-10 py-8 relative flex flex-col w-full">
+                <div class="flex flex-col items-center">
+                  <span class="iconify text-red-900 text-2xl" data-icon="la:hands-helping-solid" data-inline="false"></span>
+                  <p class="text-md self-center font-bold text-red-900 uppercase pt-2">Support</p>
+                  <h3 class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-blue-800 sm:leading-10">We support free-lancers and clients to do their best</h3>
+                </div>
+                <div class="flex justify-around space-x-10 mt-10">
+                  <div class="flex-1 flex flex-col">
+                    <span class="text-lg leading-6 font-bold text-blue-800">Choose your free-lancer</span>
+                    <span class="mt-2 text-base leading-6 text-gray-500">Whatever the requirements, a freelancer would be able to do it, including: mobile app development, web design, research (and a whole lot more).</span>
+                  </div>
+                  <div class="flex-1 flex flex-col">
+                    <span class="text-lg leading-6 font-bold text-blue-800">Post a project</span>
+                    <span class="mt-2 text-base leading-6 text-gray-500">Just submit your project and in a few moments you will receive competitive bids from free- lancers.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Advantages -->
+          <div class="relative pb-16">
+            <svg class="absolute z-0 top-0 transform rotate-180 w-full" width="1392px" height="1546px" viewBox="0 0 1392 1546" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+              <title>Path 11</title>
+              <desc>Created with Sketch.</desc>
+              <defs>
+                <linearGradient x1="71.7027963%" y1="0%" x2="18.0166944%" y2="62.172774%" id="linearGradient-1">
+                  <stop stop-color="#69E3FF" offset="0%"></stop>
+                  <stop stop-color="#69BBED" stop-opacity="0.2" offset="100%"></stop>
+                </linearGradient>
+              </defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.199999988">
+                <g id="ManyPixels-Home" transform="translate(-14.000000, -1576.000000)" fill="url(#linearGradient-1)">
+                  <path
+                    d="M444.959322,1817.82877 C641.136998,1744.29687 787.113547,1678.39565 882.888969,1620.12509 C1026.5521,1532.71926 1422.14624,1545.20581 1405.48964,1973.91061 C1388.83305,2402.61542 891.911291,1989.02381 878.030795,2351.1337 C864.150299,2713.24358 444.959322,2465.59372 444.959322,2998.35309 C444.959322,3282.33664 -118.267932,3078.93963 43.0447283,2368.27049 C98.5925197,2123.55256 232.564051,1940.07198 444.959322,1817.82877 Z"
+                    id="Path-11"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <div class="max-w-screen-xl mx-auto px-6 lg:px-8">
+              <div class="flex flex-col items-center">
+                <span class="iconify text-red-900 text-2xl" data-icon="bi:hand-thumbs-up" data-inline="false"></span>
+                <p class="text-md self-center font-bold text-red-900 uppercase pt-2">Advantages</p>
+                <h3 class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-blue-800 sm:leading-10">Your advantages with Free-lancer.eu</h3>
+              </div>
+
+              <div class="mt-20">
+                <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+                  <li>
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
+                          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="text-lg leading-6 font-bold text-blue-800">Bids</h5>
+                        <p class="mt-2 text-base leading-6 text-gray-500">Get free offers within minutes from our highly skilled free-lancers.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mt-10 md:mt-0">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
+                          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="text-lg leading-6 font-bold text-blue-800">Live Chat</h5>
+                        <p class="mt-2 text-base leading-6 text-gray-500">You can communicate with free-lancers to constantly monitor your project.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mt-10 md:mt-0">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
+                          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="text-lg leading-6 font-bold text-blue-800">Pay for quality</h5>
+                        <p class="mt-2 text-base leading-6 text-gray-500">Pay for the project when is finished and you're 100% happy.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mt-10 md:mt-0">
+                    <div class="flex">
+                      <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-400 text-white">
+                          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="ml-4">
+                        <h5 class="text-lg leading-6 font-bold text-blue-800">High quality</h5>
+                        <p class="mt-2 text-base leading-6 text-gray-500">Free-Lancer.eu is a professional platform and customers expect professional experience.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mx-auto max-w-screen-lg shadow-lg bg-white rounded-md my-16 relative z-20">
+              <div class="px-10 py-8 relative flex flex-col w-full">
+                <div class="flex flex-col items-center">
+                  <span class="iconify text-red-900 text-2xl" data-icon="carbon:manage-protection" data-inline="false"></span>
+                  <p class="text-md self-center font-bold text-red-900 uppercase pt-2">Money Protection</p>
+                  <h3 class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-blue-800 sm:leading-10">Your funding is always secured.</h3>
+                </div>
+                <div class="flex">
+                  <div class="flex-1 flex flex-col px-8">
+                    <span class="mt-2 text-base leading-6 text-gray-500 text-center">Outsource projects at Free-Lancer.eu without risks and work with free-lancers from all over the world. If you've ever face difficulties, we'll help you solve it. </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories -->
+          <div class="">
+            <div class="max-w-screen-sxl mx-auto py-32 lg:py-16 px-6 lg:px-8">
+              <div class="flex flex-col items-center">
+                <span class="iconify text-red-900 text-2xl" data-icon="ic:outline-category" data-inline="false"></span>
+                <p class="text-md self-center font-bold text-red-900 uppercase pt-2">Categories</p>
+                <h3 class="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-blue-800 sm:leading-10">Get projects in more than 100 categories</h3>
+              </div>
+              <div class="pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 row-gap-4 md:col-gap-8 md:row-gap-10">
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="fa-solid:laptop-code" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Websites, Software & Mobile</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="carbon:network-4" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Informatik & Networking</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="ion:game-controller-outline" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Game Development</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="mdi:monitor-dashboard" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Data Entry, Analytics & Admin</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="ic:outline-engineering" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Engineering & Science</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="clarity:design-line" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Design & Architecture</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="uil:shop" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Product Sourcing & Manufacturing</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="entypo:megaphone" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Sales, Marketing & Digital Marketing</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-full bg-white relative">
+                  <div class="flex rounded-lg bg-white shadow-lg hover:shadow-xl transition duration-150 ease-in-out p-8 h-full">
+                    <div class="flex flex-col items-start justify-center">
+                      <span class="iconify text-5xl text-red-900" data-icon="wpf:business-contact" data-inline="false"></span>
+                      <div class="mt-4 text-2xl text-blue-900 font-bold leading-tight flex flex-col">Business & Accounting</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-blue-800 z-20 relative">
+        <div class="flex flex-col max-w-screen-sxl mx-auto text-xs text-white py-4 px-4 sm:px-6 lg:px-8">
+          <!-- <div
+      class="flex flex-col max-w-screen-sxl mx-auto text-xs text-white sm:h-24 h-20 py-4 px-4 sm:px-6 lg:px-8"
+    > -->
+          <div class="flex flex-col md:flex-row justify-between pt-6 pb-10 space-y-2 md:space-y-0">
+            <div class="md:mr-auto flex-col space-y-4">
+              <div class="flex justify-center md:justify-start">
+                <svg width="200" height="109" viewBox="0 0 455 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4502 36.047L2.21973 20.8165L4.8648 18.1714L20.0953 33.4019L17.4502 36.047Z" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 61.2971C0 50.7937 8.58815 42.2791 19.1822 42.2791C29.7762 42.2791 38.3643 50.7937 38.3643 61.2971V65.2102H0V61.2971ZM0 81.9819V68.2106H38.3643V81.9819C38.3643 92.4853 29.7762 101 19.1822 101C8.58815 101 0 92.4853 0 81.9819ZM19.1821 49.924C17.8665 49.924 16.8 50.9814 16.8 52.2857V57.0092C16.8 58.3135 17.8665 59.3709 19.1821 59.3709C20.4977 59.3709 21.5642 58.3135 21.5642 57.0092V52.2857C21.5642 50.9814 20.4977 49.924 19.1821 49.924Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.29688 25.8671C9.01639 24.1476 11.0578 22.7836 13.3044 21.853C15.5511 20.9224 17.959 20.4434 20.3908 20.4434C22.8226 20.4434 25.2305 20.9224 27.4772 21.853C29.7238 22.7836 31.7652 24.1476 33.4847 25.8671L30.8396 28.5122C29.4675 27.14 27.8385 26.0515 26.0457 25.3089C24.2528 24.5663 22.3313 24.1841 20.3908 24.1841C18.4503 24.1841 16.5287 24.5663 14.7359 25.3089C12.9431 26.0515 11.3141 27.14 9.94195 28.5122L7.29688 25.8671Z"
+                    fill="white"
+                    fill-opacity="0.25"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.29688 25.8671C9.01639 24.1476 11.0578 22.7836 13.3044 21.853C15.5511 20.9224 17.959 20.4434 20.3908 20.4434L20.3908 24.1841C18.4503 24.1841 16.5287 24.5663 14.7359 25.3089C12.9431 26.0515 11.3141 27.14 9.94195 28.5122L7.29688 25.8671Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.910156 19.4805C3.46837 16.9223 6.50542 14.893 9.84789 13.5085C13.1904 12.124 16.7728 11.4114 20.3907 11.4114C24.0085 11.4114 27.591 12.124 30.9335 13.5085C34.2759 14.893 37.313 16.9223 39.8712 19.4805L37.2261 22.1256C35.0152 19.9147 32.3906 18.161 29.5019 16.9645C26.6133 15.768 23.5173 15.1521 20.3907 15.1521C17.264 15.1521 14.168 15.768 11.2794 16.9645C8.39077 18.161 5.7661 19.9147 3.55523 22.1256L0.910156 19.4805Z"
+                    fill="white"
+                    fill-opacity="0.25"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.910156 19.4805C3.46837 16.9223 6.50542 14.893 9.84789 13.5085C13.1904 12.124 16.7728 11.4114 20.3907 11.4114V15.1521C17.264 15.1521 14.168 15.768 11.2794 16.9645C8.39077 18.161 5.7661 19.9147 3.55523 22.1256L0.910156 19.4805Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M409.8 73.008C409.755 71.784 409.528 70.7187 409.12 69.812C408.757 68.86 408.259 68.0893 407.624 67.5C406.989 66.8653 406.264 66.412 405.448 66.14C404.632 65.8227 403.793 65.664 402.932 65.664C401.164 65.664 399.623 66.3213 398.308 67.636C397.039 68.9053 396.313 70.696 396.132 73.008H409.8ZM395.86 78.584C395.996 81.1227 396.721 83.14 398.036 84.636C399.396 86.132 401.164 86.88 403.34 86.88C404.791 86.88 406.06 86.5627 407.148 85.928C408.281 85.248 409.007 84.3187 409.324 83.14H418.436C417.393 86.5853 415.58 89.2373 412.996 91.096C410.412 92.9547 407.329 93.884 403.748 93.884C392.596 93.884 387.02 87.8093 387.02 75.66C387.02 73.076 387.383 70.7413 388.108 68.656C388.833 66.5707 389.876 64.78 391.236 63.284C392.641 61.788 394.341 60.6547 396.336 59.884C398.331 59.068 400.62 58.66 403.204 58.66C408.372 58.66 412.271 60.3147 414.9 63.624C417.575 66.9333 418.912 71.92 418.912 78.584H395.86ZM443.727 93V88.308C441.461 92.0253 437.993 93.884 433.323 93.884C431.646 93.884 430.105 93.5893 428.699 93C427.339 92.4107 426.161 91.572 425.163 90.484C424.166 89.396 423.373 88.104 422.783 86.608C422.239 85.112 421.967 83.4347 421.967 81.576V59.544H430.807V80.216C430.807 84.3867 432.689 86.472 436.451 86.472C438.718 86.472 440.418 85.7693 441.551 84.364C442.73 82.9133 443.319 81.0773 443.319 78.856V59.544H452.091V93H443.727Z"
+                    fill="white"
+                  />
+                  <path d="M376.5 94C380.075 94 383 91.075 383 87.5C383 83.925 380.075 81 376.5 81C372.925 81 370 83.925 370 87.5C370 91.075 372.925 94 376.5 94Z" fill="#FFCF0F" />
+                  <path
+                    d="M62.236 93V65.8H57.272V59.544H62.236C62.236 51.384 66.9733 47.304 76.448 47.304V54.444C75.3147 54.444 74.3853 54.5347 73.66 54.716C72.98 54.852 72.436 55.124 72.028 55.532C71.62 55.94 71.3253 56.484 71.144 57.164C71.008 57.7987 70.94 58.592 70.94 59.544H76.652V65.8H70.94V93H62.236ZM78.8227 93V59.544H87.1187V63.556C87.844 62.4227 88.592 61.5387 89.3627 60.904C90.1787 60.2693 90.9947 59.7933 91.8107 59.476C92.672 59.1133 93.5334 58.8867 94.3947 58.796C95.256 58.7053 96.14 58.66 97.0467 58.66H98.2027V67.704C97.3867 67.568 96.5707 67.5 95.7547 67.5C90.36 67.5 87.6627 70.1973 87.6627 75.592V93H78.8227ZM120.644 73.008C120.598 71.784 120.372 70.7187 119.964 69.812C119.601 68.86 119.102 68.0893 118.468 67.5C117.833 66.8653 117.108 66.412 116.292 66.14C115.476 65.8227 114.637 65.664 113.776 65.664C112.008 65.664 110.466 66.3213 109.152 67.636C107.882 68.9053 107.157 70.696 106.976 73.008H120.644ZM106.704 78.584C106.84 81.1227 107.565 83.14 108.88 84.636C110.24 86.132 112.008 86.88 114.184 86.88C115.634 86.88 116.904 86.5627 117.992 85.928C119.125 85.248 119.85 84.3187 120.168 83.14H129.28C128.237 86.5853 126.424 89.2373 123.84 91.096C121.256 92.9547 118.173 93.884 114.592 93.884C103.44 93.884 97.8638 87.8093 97.8638 75.66C97.8638 73.076 98.2264 70.7413 98.9518 68.656C99.6771 66.5707 100.72 64.78 102.08 63.284C103.485 61.788 105.185 60.6547 107.18 59.884C109.174 59.068 111.464 58.66 114.048 58.66C119.216 58.66 123.114 60.3147 125.744 63.624C128.418 66.9333 129.756 71.92 129.756 78.584H106.704ZM154.843 73.008C154.798 71.784 154.571 70.7187 154.163 69.812C153.8 68.86 153.302 68.0893 152.667 67.5C152.032 66.8653 151.307 66.412 150.491 66.14C149.675 65.8227 148.836 65.664 147.975 65.664C146.207 65.664 144.666 66.3213 143.351 67.636C142.082 68.9053 141.356 70.696 141.175 73.008H154.843ZM140.903 78.584C141.039 81.1227 141.764 83.14 143.079 84.636C144.439 86.132 146.207 86.88 148.383 86.88C149.834 86.88 151.103 86.5627 152.191 85.928C153.324 85.248 154.05 84.3187 154.367 83.14H163.479C162.436 86.5853 160.623 89.2373 158.039 91.096C155.455 92.9547 152.372 93.884 148.791 93.884C137.639 93.884 132.063 87.8093 132.063 75.66C132.063 73.076 132.426 70.7413 133.151 68.656C133.876 66.5707 134.919 64.78 136.279 63.284C137.684 61.788 139.384 60.6547 141.379 59.884C143.374 59.068 145.663 58.66 148.247 58.66C153.415 58.66 157.314 60.3147 159.943 63.624C162.618 66.9333 163.955 71.92 163.955 78.584H140.903Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M199.768 93V47.304H208.608V93H199.768ZM232.651 76.612C232.197 77.0653 231.54 77.428 230.679 77.7C229.817 77.972 228.571 78.2667 226.939 78.584C224.4 79.0827 222.655 79.7173 221.703 80.488C220.751 81.2587 220.275 82.3693 220.275 83.82C220.275 86.3133 221.703 87.56 224.559 87.56C225.692 87.56 226.735 87.3787 227.687 87.016C228.684 86.608 229.523 86.0867 230.203 85.452C230.928 84.772 231.495 84.0013 231.903 83.14C232.356 82.2333 232.583 81.2813 232.583 80.284L232.651 76.612ZM233.263 93C232.991 92.1387 232.809 91.1413 232.719 90.008C231.676 91.1867 230.293 92.1387 228.571 92.864C226.848 93.544 224.853 93.884 222.587 93.884C218.733 93.884 215.9 93.0453 214.087 91.368C212.319 89.6453 211.435 87.424 211.435 84.704C211.435 82.3013 211.82 80.3973 212.591 78.992C213.361 77.5413 214.427 76.408 215.787 75.592C217.147 74.776 218.756 74.1867 220.615 73.824C222.519 73.416 224.581 73.0533 226.803 72.736C229.024 72.4187 230.52 72.0107 231.291 71.512C232.061 70.968 232.447 70.1067 232.447 68.928C232.447 67.84 231.925 67.0013 230.883 66.412C229.885 65.7773 228.525 65.46 226.803 65.46C224.763 65.46 223.289 65.9133 222.383 66.82C221.521 67.7267 220.977 68.928 220.751 70.424H212.523C212.568 68.7013 212.84 67.1147 213.339 65.664C213.883 64.2133 214.721 62.9667 215.855 61.924C217.033 60.8813 218.552 60.088 220.411 59.544C222.269 58.9547 224.536 58.66 227.211 58.66C229.84 58.66 232.061 58.9547 233.875 59.544C235.733 60.1333 237.207 60.9947 238.295 62.128C239.428 63.216 240.244 64.5987 240.743 66.276C241.241 67.908 241.491 69.7667 241.491 71.852V93H233.263ZM266.809 93V72.736C266.809 70.152 266.378 68.4067 265.517 67.5C264.656 66.5933 263.182 66.14 261.097 66.14C256.518 66.14 254.229 68.7013 254.229 73.824V93H245.389V59.544H253.821V64.44C254.864 62.536 256.246 61.108 257.969 60.156C259.692 59.1587 261.913 58.66 264.633 58.66C266.22 58.66 267.693 58.9093 269.053 59.408C270.413 59.8613 271.569 60.564 272.521 61.516C273.518 62.468 274.289 63.6467 274.833 65.052C275.422 66.412 275.717 67.9987 275.717 69.812V93H266.809ZM309.712 80.896C309.486 82.8453 308.919 84.6133 308.012 86.2C307.151 87.7867 306.04 89.1467 304.68 90.28C303.32 91.4133 301.756 92.2973 299.988 92.932C298.266 93.5667 296.384 93.884 294.344 93.884C292.078 93.884 289.992 93.5213 288.088 92.796C286.23 92.0253 284.62 90.892 283.26 89.396C281.9 87.8547 280.835 85.9733 280.064 83.752C279.339 81.4853 278.976 78.856 278.976 75.864C278.976 72.872 279.339 70.288 280.064 68.112C280.835 65.936 281.9 64.168 283.26 62.808C284.62 61.4027 286.252 60.36 288.156 59.68C290.106 59 292.259 58.66 294.616 58.66C296.792 58.66 298.764 58.9547 300.532 59.544C302.346 60.1333 303.91 60.9947 305.224 62.128C306.584 63.2613 307.65 64.6213 308.42 66.208C309.191 67.7947 309.644 69.5627 309.78 71.512H300.872C300.646 69.7893 299.943 68.452 298.764 67.5C297.631 66.5027 296.226 66.004 294.548 66.004C293.596 66.004 292.712 66.1627 291.896 66.48C291.08 66.7973 290.355 67.3413 289.72 68.112C289.131 68.8373 288.655 69.8347 288.292 71.104C287.93 72.328 287.748 73.8467 287.748 75.66C287.748 79.332 288.406 82.052 289.72 83.82C291.035 85.588 292.554 86.472 294.276 86.472C295.999 86.472 297.472 85.996 298.696 85.044C299.92 84.092 300.623 82.7093 300.804 80.896H309.712ZM334.359 73.008C334.313 71.784 334.087 70.7187 333.679 69.812C333.316 68.86 332.817 68.0893 332.183 67.5C331.548 66.8653 330.823 66.412 330.007 66.14C329.191 65.8227 328.352 65.664 327.491 65.664C325.723 65.664 324.181 66.3213 322.867 67.636C321.597 68.9053 320.872 70.696 320.691 73.008H334.359ZM320.419 78.584C320.555 81.1227 321.28 83.14 322.595 84.636C323.955 86.132 325.723 86.88 327.899 86.88C329.349 86.88 330.619 86.5627 331.707 85.928C332.84 85.248 333.565 84.3187 333.883 83.14H342.995C341.952 86.5853 340.139 89.2373 337.555 91.096C334.971 92.9547 331.888 93.884 328.307 93.884C317.155 93.884 311.579 87.8093 311.579 75.66C311.579 73.076 311.941 70.7413 312.667 68.656C313.392 66.5707 314.435 64.78 315.795 63.284C317.2 61.788 318.9 60.6547 320.895 59.884C322.889 59.068 325.179 58.66 327.763 58.66C332.931 58.66 336.829 60.3147 339.459 63.624C342.133 66.9333 343.471 71.92 343.471 78.584H320.419ZM346.526 93V59.544H354.822V63.556C355.547 62.4227 356.295 61.5387 357.066 60.904C357.882 60.2693 358.698 59.7933 359.514 59.476C360.375 59.1133 361.236 58.8867 362.098 58.796C362.959 58.7053 363.843 58.66 364.75 58.66H365.906V67.704C365.09 67.568 364.274 67.5 363.458 67.5C358.063 67.5 355.366 70.1973 355.366 75.592V93H346.526Z"
+                    fill="white"
+                  />
+                  <path d="M170 72H194V78H170V72Z" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex space-x-4 justify-center md:justify-end items-center">
+              <router-link to="/impressum">Impressum</router-link>
+              <router-link to="/data-protection">Privacy Policy</router-link>
+              <router-link to="/terms-and-conditions">Terms and Conditions</router-link>
+              <router-link to="/contact">Contact</router-link>
+
+              <div class="group inline-flex items-center py-2 px-3 bg-transparent hover:bg-blue-900 transition duration-200 ease-in-out rounded-full">
+                <div class="relative inline-block text-left">
+                  <button class="flex items-center text-white">
+                    <span class="iconify text-md" data-icon="bi:globe" data-inline="false"></span>
+                    <span class="ml-1">
+                      <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul class="bg-white shadow-md rounded-md transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-bottom right-0 bottom-0 mb-8 w-48 p-2 flex flex-col space-y-1 -ml-2">
+                    <li class="cursor-pointer">
+                      <div @click="changeLanguage('EN')" class="font-semibold text-sm p-3 leading-5 text-gray-800 rounded hover:rounded-md hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 flex transition duration-200 ease-in-out">
+                        <span class="iconify text-xl mr-1" data-icon="emojione-flag-for-european-union" data-inline="false"></span>
+                        <div>English</div>
+                      </div>
+                    </li>
+                    <li class="cursor-pointer">
+                      <div @click="changeLanguage('DE')" class="font-semibold text-sm p-3 leading-5 text-gray-800 rounded hover:rounded-md hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 flex transition duration-200 ease-in-out">
+                        <span class="iconify text-xl mr-1" data-icon="emojione-flag-for-germany" data-inline="false"></span>
+                        <div>Deutsch</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 text-center pb-4 pt-8 border-t border-gray-50 border-opacity-25 items-center">Copyright © 2020 Free-lancer.eu</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
